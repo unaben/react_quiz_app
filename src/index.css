@@ -1,8 +1,13 @@
-body {
+.main-container {
   /* background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%); */
   background-color: #f5f3f4;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  width: 100vw;
+}
+
+.wrapper {
+  width: 80%;
 }

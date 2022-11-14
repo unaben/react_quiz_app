@@ -1,6 +1,5 @@
 import React, { useContext } from "react";
 import { gameContext } from "../Context/gameContext";
-import Card from "../Card/Card";
 import "../LandingPage/LandingPage.styles.css";
 
 const LandingPage = () => {
@@ -15,7 +14,7 @@ const LandingPage = () => {
   };
 
   return (
-    <Card>
+    <div className="landingPage-wrapper">
       <h1 className="header">Welcome to Quiz Game!</h1>
       <h3 className="primary_text">Please enter your username.</h3>
       <input
@@ -31,7 +30,7 @@ const LandingPage = () => {
       <p className="top_score">
         Top score: <span>{topScore}</span>
       </p>
-    </Card>
+    </div>
   );
 };
 

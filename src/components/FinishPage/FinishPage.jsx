@@ -1,6 +1,5 @@
 import React, { useContext } from "react";
 import { gameContext } from "../Context/gameContext";
-import Card from "../Card/Card";
 import "../FinishPage/FinishPage.styles.css";
 
 const FinishPage = () => {
@@ -24,7 +23,7 @@ const FinishPage = () => {
   };
 
   return (
-    <Card>
+    <div className="finishPage-wrapper">
       <h1 className="headingText">
         You reach the end of the game, {username}!
       </h1>
@@ -33,7 +32,7 @@ const FinishPage = () => {
       <button className="play_again_btn" onClick={handleClick}>
         Play Again
       </button>
-    </Card>
+    </div>
   );
 };
 

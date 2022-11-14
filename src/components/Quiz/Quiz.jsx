@@ -1,10 +1,8 @@
 import React from "react";
-import Card from "../Card/Card";
 import "../Quiz/Quiz.styles.css";
 import { questions } from "../../components/questionBank";
 
 const Quiz = ({ score, setScore, setGameState, setQuizIndex, quizIndex }) => {
-
   const handleClick = (isCorrect) => {
     if (quizIndex < 9) {
       if (isCorrect) {
@@ -20,13 +18,13 @@ const Quiz = ({ score, setScore, setGameState, setQuizIndex, quizIndex }) => {
   };
 
   return (
-    <Card>
+    <div className="quiz-wrapper">
       <h1 className="quiz">{questions[quizIndex].questionText}</h1>
-      <div className="answers">
+      <div className="answers-wrapper">
         {questions[quizIndex].answers.map((answer, index) => {
           return (
             <div
-              className="answer"
+              className="answer-btn"
               key={index}
               onClick={() => handleClick(answer.correctAnswer)}
             >
@@ -35,13 +33,14 @@ const Quiz = ({ score, setScore, setGameState, setQuizIndex, quizIndex }) => {
           );
         })}
       </div>
+
       <p className="score">
         Score: <span>{score}</span>
       </p>
       <p className="question_number">
         Question <span>{quizIndex + 1}</span>/10
       </p>
-    </Card>
+    </div>
   );
 };
 

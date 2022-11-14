@@ -35,6 +35,14 @@
   margin: 2rem auto;
 }
 
+.landingPage-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
 .top_score {
   font-weight: bold;
   position: absolute;

@@ -22,3 +22,11 @@
   display: block;
   margin: 5rem auto 0 auto;
 }
+
+.finishPage-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}

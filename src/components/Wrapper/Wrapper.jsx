@@ -1,8 +1,8 @@
 import React from "react";
-import "../Card/Card.styles.css";
+import "./Wrapper.styles.css";
 
-const Cards = (props) => {
+const Wrapper = (props) => {
   return <div className="card">{props.children}</div>;
 };
 
-export default Cards;
+export default Wrapper;
