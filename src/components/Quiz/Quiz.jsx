@@ -1,15 +1,10 @@
 import React from "react";
 import Card from "../Card/Card";
 import "../Quiz/Quiz.styles.css";
+import { questions } from "../../components/questionBank";
 
-const Quiz = ({
-  score,
-  setScore,
-  setGameState,
-  questions,
-  setQuizIndex,
-  quizIndex,
-}) => {
+const Quiz = ({ score, setScore, setGameState, setQuizIndex, quizIndex }) => {
+
   const handleClick = (isCorrect) => {
     if (quizIndex < 9) {
       if (isCorrect) {
