@@ -32,10 +32,10 @@
   border-radius: 5px;
 }
 
-button:hover {
+/* button:hover {
   background-color: antiquewhite;
   color: black;
-}
+} */
 
 .score-wrapper {
   height: 30vh;
