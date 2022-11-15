@@ -27,9 +27,11 @@ const LandingPage = () => {
       <button className="start_btn" onClick={handleStartGame}>
         Let's play
       </button>
-      <p className="top_score">
-        Top score: <span>{topScore}</span>
-      </p>
+      <div className="top_score">
+        <p>
+          Top score: <span>{topScore}</span>
+        </p>
+      </div>
     </div>
   );
 };

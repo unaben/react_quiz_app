@@ -33,13 +33,14 @@ const Quiz = ({ score, setScore, setGameState, setQuizIndex, quizIndex }) => {
           );
         })}
       </div>
-
-      <p className="score">
-        Score: <span>{score}</span>
-      </p>
-      <p className="question_number">
-        Question <span>{quizIndex + 1}</span>/10
-      </p>
+      <div className="score-wrapper">
+        <p>
+          Score: <span>{score}</span>
+        </p>
+        <p className="question_number">
+          Question <span>{quizIndex + 1}</span>/10
+        </p>
+      </div>
     </div>
   );
 };

@@ -38,14 +38,12 @@
 .landingPage-wrapper {
   width: 100%;
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
 }
 
 .top_score {
-  font-weight: bold;
-  position: absolute;
-  bottom: 1rem;
-  left: 1rem;
+  height: 30vh;
+  display: flex;
+  align-items: flex-end;
+  padding: 0.5rem;
 }

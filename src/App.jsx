@@ -14,7 +14,7 @@ const App = () => {
 
   return (
     <div className="main-container">
-      <Wrapper className="App">
+      <div className="wrapper">
         <gameContext.Provider
           value={{
             gameState,
@@ -31,7 +31,7 @@ const App = () => {
           {gameState === "quizPage" && <QuizPage />}
           {gameState === "finishPage" && <FinishPage />}
         </gameContext.Provider>
-      </Wrapper>
+      </div>
     </div>
   );
 };
