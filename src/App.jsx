@@ -4,7 +4,6 @@ import { gameContext } from "./components/Context/gameContext";
 import FinishPage from "./components/FinishPage/FinishPage";
 import LandingPage from "./components/LandingPage/LandingPage";
 import QuizPage from "./components/QuizPage/QuizPage";
-import Wrapper from "./components/Wrapper/Wrapper";
 
 const App = () => {
   const [gameState, setGameState] = useState("landingPage");

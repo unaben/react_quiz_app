@@ -23,13 +23,13 @@ const Quiz = ({ score, setScore, setGameState, setQuizIndex, quizIndex }) => {
       <div className="answers-wrapper">
         {questions[quizIndex].answers.map((answer, index) => {
           return (
-            <div
+            <button
               className="answer-btn"
               key={index}
               onClick={() => handleClick(answer.correctAnswer)}
             >
               <p>{answer.answerText}</p>
-            </div>
+            </button>
           );
         })}
       </div>

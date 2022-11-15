@@ -32,7 +32,7 @@
   border-radius: 5px;
 }
 
-.answer-btn:hover {
+button:hover {
   background-color: antiquewhite;
   color: black;
 }
