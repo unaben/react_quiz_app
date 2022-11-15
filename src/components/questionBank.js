@@ -148,6 +148,27 @@ export const questions = [
     ],
   },
   {
+    questionText: "What is the smallest country in the world?",
+    answers: [
+      {
+        answerText: "St Vincent",
+        correctAnswer: false,
+      },
+      {
+        answerText: "Vatican city",
+        correctAnswer: true,
+      },
+      {
+        answerText: "Luxembourg",
+        correctAnswer: false,
+      },
+      {
+        answerText: "Antigua and Barbuda",
+        correctAnswer: false,
+      },
+    ],
+  },
+  {
     questionText:
       "Demolition of the Berlin wall separating East and West Germany began in what year?",
     answers: [
@@ -207,6 +228,27 @@ export const questions = [
       },
       {
         answerText: "Brazil",
+        correctAnswer: false,
+      },
+    ],
+  },
+  {
+    questionText: "Which is a continent?",
+    answers: [
+      {
+        answerText: "Canada",
+        correctAnswer: false,
+      },
+      {
+        answerText: "Africa",
+        correctAnswer: true,
+      },
+      {
+        answerText: "Brazil",
+        correctAnswer: false,
+      },
+      {
+        answerText: "Hungary",
         correctAnswer: false,
       },
     ],

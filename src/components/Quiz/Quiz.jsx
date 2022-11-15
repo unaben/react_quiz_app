@@ -3,12 +3,15 @@ import "../Quiz/Quiz.styles.css";
 import { questions } from "../../components/questionBank";
 
 const Quiz = ({ score, setScore, setGameState, setQuizIndex, quizIndex }) => {
+  console.log("index:", quizIndex);
   const handleClick = (isCorrect) => {
     if (quizIndex < 9) {
       if (isCorrect) {
         setScore((prevScore) => (prevScore += 100));
       }
       setQuizIndex((prevIndex) => prevIndex + 1);
+      // const randomNum = Math.floor(Math.random() * 10);
+      // setQuizIndex(randomNum);
     } else {
       if (isCorrect) {
         setScore((prevScore) => (prevScore += 100));
