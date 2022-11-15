@@ -3,9 +3,8 @@ import "../Quiz/Quiz.styles.css";
 import { questions } from "../../components/questionBank";
 
 const Quiz = ({ score, setScore, setGameState, setQuizIndex, quizIndex }) => {
-  console.log("index:", quizIndex);
   const handleClick = (isCorrect) => {
-    if (quizIndex < 9) {
+    if (quizIndex < 11) {
       if (isCorrect) {
         setScore((prevScore) => (prevScore += 100));
       }
