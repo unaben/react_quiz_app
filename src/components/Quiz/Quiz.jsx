@@ -40,7 +40,7 @@ const Quiz = ({ score, setScore, setGameState, setQuizIndex, quizIndex }) => {
           Score: <span>{score}</span>
         </p>
         <p className="question_number">
-          Question <span>{quizIndex + 1}</span>/10
+          Question <span>{quizIndex + 1}</span>/{questions.length}
         </p>
       </div>
     </div>
